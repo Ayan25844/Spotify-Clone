@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    text-align: center;
+    font-family: 'Montserrat';
+    background-color:#faebd7
+}
+
+.color{
+    color:#fff;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+/* Title Section */
+
+.brand{
+    margin-left: 20px;
+}
+
+.heading{
+    padding: 30px 40px 60px;
+    text-align: left;
+}
+
+.titleHeading{
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+/* Playlist Section */
+
+#playlist{
+    padding:2% 12%;
+}
+
+.container{
+    min-height: 75vh;
+    background-color: #000000;
+}
+
+.songList{
+    height:50px;
+    display: flex;
+    background-color:#fff;
+    margin:12px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songList img{
+    width: 43px;
+    margin: 0 23px;
+}
+
+.borderRadius{
+    border-radius: 34px;
+}
+
+.songName{
+    font-family: 'Montserrat';
+    font-weight:500 ;
+}
+
+.timeStamp i{
+    padding-left: 5px;
+}
+
+/* BOTTOM SECTION */
+
+#bottom{
+    bottom: 0;
+    height: 130px;
+    position: absolute;
+    position: sticky;
+    background-color:#000000;
+}
+
+.bottomContainer{
+    padding-top: 25px;
+}
+
+input{
+    width: 80vw;
+}
+
+.icons{
+    padding:0 3px 0;
+}
+
+.iconContainer{
+    padding-top: 14px;
+}
+
+.currentSong{
+    padding-top: 8px;
+}
+
+.playing{
+    opacity: 0;
+    margin-right: 10px;
+    transition: opacity 0.4s ease-in;
+}
+
+@media(min-width:1320px){
+    .container{
+        background-image: url("bg.jpg");
+        background-size: cover;
+    }
+    
+}
+
+@media(max-width:575px){
+    #playlist .container .row{
+        padding-right: 20px;
+    }
+}
+
+@media(max-width:490px){
+    .song{
+        position: absolute;
+        display: none;
+    }
+}
+
+@media(max-width:1320px){
+   .heading{
+    text-align: center;
+   }
+}
+
+
